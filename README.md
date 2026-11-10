@@ -14,14 +14,15 @@ IMDB Dataset of 50K Movie Reviews (Kaggle, file `IMDB Dataset.csv`, columns `rev
 6. Inspect the most influential positive and negative words
 
 ## Results
-Fill in after running (copy from the terminal output):
+Evaluated on a 20% held-out test set (9,917 reviews) from 49,582 unique reviews (duplicates removed).
 
 | Model | Accuracy | F1-score |
 |---|---|---|
-| Logistic Regression | | |
-| Naive Bayes | | |
-| Linear SVM | | |
+| Logistic Regression | 89.73% | 0.8992 |
+| Naive Bayes | 87.77% | 0.8788 |
+| **Linear SVM (best)** | **90.00%** | **0.9009** |
 
+Linear SVM gave precision, recall and F1 of about 0.90 for both classes. Top negative words: worst, bad, awful, boring, waste. Top positive words: great, excellent, best, perfect, amazing.
 ## How to run
 ```bash
 pip install -r requirements.txt
